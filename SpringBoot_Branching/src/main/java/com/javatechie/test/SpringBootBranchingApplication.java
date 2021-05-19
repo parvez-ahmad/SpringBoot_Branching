@@ -13,6 +13,7 @@ public class SpringBootBranchingApplication {
 	@GetMapping("/{purchase}/{username}/{amount}/{productName}")
 	public String Purchase(@PathVariable String username, @PathVariable double amount,
 			@PathVariable String productName) {
+		System.out.println("this is test class");
 		return "hi " + username + " order for " + productName + " with amount " +amount+ " Stored amount";
 	}
 
